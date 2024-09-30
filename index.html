@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="mobile-view">
+        <div class="mobile-view__content">
+          <div class="dp-details">
+            <svg class="dp-details__icon-back">
+              <use xlink:href="images/sprite.svg#icon-chevron-left"></use>
+            </svg>
+            <div class="dp-details__user">
+              <img
+                src="images/avatar.jpg"
+                alt="profile photo"
+                class="dp-details__img"
+              />
+              <div class="dp-details__text">
+                <h2 class="dp-details__text--name">Samuel Green</h2>
+                <p class="dp-details__text--status">Available to Walk</p>
+              </div>
+            </div>
+
+            <svg class="dp-details__options">
+              <use
+                xlink:href="images/sprite.svg#icon-dots-three-vertical"
+              ></use>
+            </svg>
+          </div>
+
+          <div class="chat">
+            <div class="chat__chat-box chat__chat-box--left">
+              <p class="chat__left-text chat__text">
+                That sounds great. I’d be happy with that.
+              </p>
+            </div>
+
+            <div class="chat__chat-box chat__chat-box--left">
+              <p class="chat__left-text chat__text">
+                Could you send over some pictures of your dog, please?
+              </p>
+            </div>
+
+            <div class="chat__right-chat">
+              <div class="img-box">
+                <img
+                  src="images/dog-image-1.jpg"
+                  alt="img"
+                  class="img-box__imgs"
+                />
+                <img
+                  src="images/dog-image-2.jpg"
+                  alt="img"
+                  class="img-box__imgs"
+                />
+                <img
+                  src="images/dog-image-3.jpg"
+                  alt="img"
+                  class="img-box__imgs"
+                />
+              </div>
+            </div>
+
+            <div class="chat__right-chat">
+              <div class="chat__chat-box chat__chat-box--right">
+                <p class="chat__right-text chat__text">
+                  Here are a few pictures. She’s a happy girl!
+                </p>
+              </div>
+            </div>
+
+            <div class="chat__right-chat">
+              <div class="chat__chat-box chat__chat-box--right">
+                <p class="chat__right-text chat__text">Can you make it?</p>
+              </div>
+            </div>
+
+            <div class="chat__chat-box chat__chat-box--left">
+              <p class="chat__left-text chat__text">
+                She looks so happy! The time we discussed works. How long shall
+                I take her out for?
+              </p>
+            </div>
+
+            <div class="plan-box">
+              <div class="plan-box__plans">
+                <div class="plan-box__form">
+                  <input
+                    type="radio"
+                    id="30mins"
+                    name="plan"
+                    value="30 minute walk"
+                    class="plan-box__input"
+                  />
+                  <span></span>
+                  <label for="30mins">30 minute walk</label>
+                </div>
+                <h3 class="price">$29</h3>
+              </div>
+            </div>
+
+            <div class="plan-box">
+              <div class="plan-box__plans">
+                <div class="plan-box__form">
+                  <input
+                    type="radio"
+                    id="1hr"
+                    name="plan"
+                    value="1 hour walk"
+                    class="plan-box__input"
+                  />
+                  <span></span>
+
+                  <label for="1hr">1 hour walk</label>
+                </div>
+
+                <h3 class="price">$49</h3>
+              </div>
+            </div>
+
+            <div class="input-field">
+              <input
+                type="text"
+                placeholder="Type a message..."
+                class="input-field__input"
+              />
+              <button type="submit" class="input-field__btn">
+                <svg class="input-field__btn-icon">
+                  <use xlink:href="images/sprite.svg#icon-chevron-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-side">
+        <div class="text-side__content">
+          <h1 class="text-side__main-heading">Simple booking</h1>
+          <p class="text-side__text">
+            Stay in touch with our dog walkers through the chat interface. This
+            makes it easy to discuss arrangements and make bookings. Once the
+            walk has been completed you can rate your walker and book again all
+            through the chat.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- 
+
+
+
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+-->

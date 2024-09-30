@@ -1,0 +1,92 @@
+/*Pale Violet (sub-heading at the top of the app UI): hsl(276, 100%, 81%)
+- Moderate Violet (chat on the left): hsl(276, 55%, 52%)
+- Desaturated Dark Violet (chat on the right): hsl(271, 15%, 43%)
+- Grayish Blue (placeholder text): hsl(206, 6%, 79%)
+- Very Dark Desaturated Violet (main heading): hsl(271, 36%, 24%)
+- Dark Grayish Violet (paragraph): hsl(270, 7%, 64%)
+
+#### Gradients
+
+These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient:
+
+- Light Magenta: hsl(293, 100%, 63%)
+- Light Violet: hsl(264, 100%, 61%)
+
+### Secondary
+
+- White: hsl(0, 0%, 100%)
+- Light Grayish Violet (app background): hsl(270, 20%, 96%)
+- Very Dark Desaturated Violet (submit button background): hsl(271, 36%, 24%)
+- Very Light Magenta (radio button outline): hsl(289, 100%, 72%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Rubik](https://fonts.google.com/specimen/Rubik)
+- Weights: 400, 500, 700
+*/
+
+:root {
+  --color-moderate-violet: #9241c8;
+  --color-pale-Violet: #d89eff;
+  --color-white: #ffffff;
+  --color-grayish-blue: hsl(206, 6%, 79%);
+
+  --color-very-light-magenta : hsl(289, 100%, 72%);
+
+  --color-light-magenta: #e942ff;
+  --color-light-Violet: #8838ff;
+  --color-light-grayish-violet: #f5f3f7;
+  --color-desaturated-light-violet: #9b90a7;
+  --color-light-grayish-violet: #f5f3f7;
+
+  --color-dark-desaturated-violet: hsl(271, 36%, 24%);
+  --color-dark-grayish-violet: hsl(270, 7%, 64%);
+  --color-desaturated-dark-violet: #6e5d7e;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+
+  background-color: var(--color-light-grayish-violet);
+  min-height: 100vh;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -8rem;
+    height: 96%;
+    width: 36.2%;
+    border-radius: 0 0 50% 50%;
+    z-index: -100;
+    background-image: linear-gradient(
+      to top right ,
+      var(--color-light-Violet),
+      var(--color-light-magenta)
+    );
+  }
+}
