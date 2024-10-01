@@ -123,7 +123,12 @@ body::before {
 .dp-details__user {
   display: flex;
   align-items: center;
-  margin-left: -7rem;
+  margin-left: -10rem;
+}
+@media only screen and (max-width: 600px) {
+  .dp-details__user {
+    margin-left: -8rem;
+  }
 }
 .dp-details__icon-back, .dp-details__options {
   height: 1.5rem;
@@ -344,7 +349,6 @@ span::before {
   justify-content: space-around;
   align-items: center;
   max-width: 80rem;
-  border: 2px solid black;
 }
 @media only screen and (max-width: 400px) {
   .container {
