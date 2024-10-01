@@ -31,13 +31,16 @@ These two colors are the vibrant background colors you see throughout the design
 - Weights: 400, 500, 700
 */
 
+$breakpoint-phone: 600px;
+$breakpoint-miniphone: 400px;
+
 :root {
   --color-moderate-violet: #9241c8;
   --color-pale-Violet: #d89eff;
   --color-white: #ffffff;
   --color-grayish-blue: hsl(206, 6%, 79%);
 
-  --color-very-light-magenta : hsl(289, 100%, 72%);
+  --color-very-light-magenta: hsl(289, 100%, 72%);
 
   --color-light-magenta: #e942ff;
   --color-light-Violet: #8838ff;
@@ -61,6 +64,14 @@ These two colors are the vibrant background colors you see throughout the design
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @media only screen and (max-width: $breakpoint-phone) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $breakpoint-miniphone) {
+    font-size: 45%;
+  }
 }
 
 body {
@@ -73,20 +84,35 @@ body {
   background-color: var(--color-light-grayish-violet);
   min-height: 100vh;
 
+  @media only screen and (max-width: $breakpoint-miniphone) {
+    padding: 8rem;
+  }
+
   &::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 0;
     left: -8rem;
     height: 96%;
-    width: 36.2%;
+    width: 35.5%;
     border-radius: 0 0 50% 50%;
     z-index: -100;
     background-image: linear-gradient(
-      to top right ,
+      to top right,
       var(--color-light-Violet),
       var(--color-light-magenta)
     );
+
+    @media only screen and (max-width: $breakpoint-phone) {
+      height: 80%;
+    }
+
+    @media only screen and (max-width: $breakpoint-miniphone) {
+      left: -22rem;
+      height: 90%;
+      width: 92%;
+      border-radius: 0 0 80% 50%;
+    }
   }
 }

@@ -72,6 +72,14 @@
     padding: 0.7rem;
     max-width: 58%;
 
+    @media only screen and (max-width: $breakpoint-phone) {
+      max-width: 68%;
+    }
+
+    @media only screen and (max-width: $breakpoint-miniphone) {
+      max-width: 65%;
+    }
+
     &--left {
       color: var(--color-moderate-violet);
       background-color: lightgray;
@@ -109,7 +117,9 @@
 }
 
 .img-box {
-  max-width: 62%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 62rem;
 
   &__imgs {
     height: 4rem;
@@ -136,6 +146,10 @@
   margin-bottom: 0.8rem;
 
   border-radius: 1rem 1rem 1rem 0.6rem;
+
+  @media only screen and (max-width: $breakpoint-miniphone) {
+    max-width: 73%;
+  }
 
   &__plans {
     display: flex;
@@ -249,11 +263,21 @@ span {
     margin-bottom: 1.2rem;
     font-size: 2.4rem;
     color: var(--color-dark-desaturated-violet);
+
+    @media only screen and (max-width: $breakpoint-miniphone) {
+      font-size: 3.85rem;
+      font-weight: 500;
+      margin-bottom: 1.8rem;
+    }
   }
 
   &__text {
     font-weight: 400;
     line-height: 1.5rem;
     color: var(--color-dark-grayish-violet);
+
+    @media only screen and (max-width: $breakpoint-miniphone) {
+      line-height: 2.5rem;
+    }
   }
 }
