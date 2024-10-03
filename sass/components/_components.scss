@@ -261,7 +261,7 @@ span {
 .text-side {
   &__main-heading {
     margin-bottom: 1.5rem;
-    font-size: 2.8rem;
+    font-size: 3rem;
     color: var(--color-dark-desaturated-violet);
 
     @media only screen and (max-width: $breakpoint-miniphone) {
@@ -272,9 +272,9 @@ span {
   }
 
   &__text {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 400;
-    line-height: 2rem;
+    line-height: 2.5rem;
     color: var(--color-dark-grayish-violet);
 
     @media only screen and (max-width: $breakpoint-miniphone) {
