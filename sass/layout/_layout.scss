@@ -1,26 +1,35 @@
 .container {
   display: flex;
   justify-content: space-around;
+  padding: 5rem 0;
   align-items: center;
-  max-width: 80rem;
-  
+  max-width: 90rem;
+
+  @media only screen and (max-width: $breakpoint-phone) {
+    padding: 4rem;
+  }
 
   @media only screen and (max-width: $breakpoint-miniphone) {
     display: inline-block;
     width: 100%;
+    padding: 0;
   }
 }
 
 .mobile-view {
-  flex: 0 0 35%;
+  flex: 0 0 32%;
   padding: 1rem;
   background-color: var(--color-white);
   border-radius: 25px;
   // margin-right: 10rem;
   box-shadow: 2rem 2rem 6rem var(--color-grayish-blue);
 
+  @media only screen and (max-width: $breakpoint-phone) {
+    flex: 0 0 40%;
+  }
+
   @media only screen and (max-width: $breakpoint-miniphone) {
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
     margin-bottom: 5rem;
   }
@@ -33,7 +42,7 @@
 }
 
 .text-side {
-  flex: 0 0 35%;
+  flex: 0 0 40%;
   width: 100%;
   height: 100%;
 

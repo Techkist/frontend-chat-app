@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: (https://techkist.github.io/mobile-responsive-frontend-chat-app/)
+- My Site URL: (https://techkist.github.io/mobile-responsive-frontend-chat-app/)
 
 ### Built with
 

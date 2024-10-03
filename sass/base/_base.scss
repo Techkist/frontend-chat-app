@@ -37,16 +37,17 @@ $breakpoint-miniphone: 400px;
 :root {
   --color-moderate-violet: #9241c8;
   --color-pale-Violet: #d89eff;
+  --color-pale-Violet-1: #f3ebf8;
   --color-white: #ffffff;
   --color-grayish-blue: hsl(206, 6%, 79%);
 
   --color-very-light-magenta: hsl(289, 100%, 72%);
 
+  --color-light-magenta-1: #f0edf0;
   --color-light-magenta: #e942ff;
   --color-light-Violet: #8838ff;
   --color-light-grayish-violet: #f5f3f7;
   --color-desaturated-light-violet: #9b90a7;
-  --color-light-grayish-violet: #f5f3f7;
 
   --color-dark-desaturated-violet: hsl(271, 36%, 24%);
   --color-dark-grayish-violet: hsl(270, 7%, 64%);
@@ -64,6 +65,7 @@ $breakpoint-miniphone: 400px;
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  position: relative;
 
   @media only screen and (max-width: $breakpoint-phone) {
     font-size: 50%;
@@ -85,7 +87,7 @@ body {
   min-height: 100vh;
 
   @media only screen and (max-width: $breakpoint-miniphone) {
-    padding: 8rem;
+    padding: 10%;
   }
 
   &::before {
@@ -93,26 +95,55 @@ body {
     display: block;
     position: absolute;
     top: 0;
-    left: -8rem;
+    left: -12%;
     height: 96%;
-    width: 35.5%;
+    width: 38%;
     border-radius: 0 0 50% 50%;
     z-index: -100;
     background-image: linear-gradient(
       to top right,
-      var(--color-light-Violet),
+      var(--color-light-Violet) 40%,
       var(--color-light-magenta)
     );
 
     @media only screen and (max-width: $breakpoint-phone) {
       height: 80%;
+      width: 50%;
     }
 
     @media only screen and (max-width: $breakpoint-miniphone) {
       left: -22rem;
-      height: 90%;
+      height: 55%;
       width: 92%;
       border-radius: 0 0 80% 50%;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    // top: 5rem;
+    bottom: 0;
+    right: -21%;
+    height: 95%;
+    width: 40.8%;
+    border-radius: 50% 50% 0 0;
+    z-index: -100;
+
+    background-color: var(--color-pale-Violet-1);
+
+    @media only screen and (max-width: $breakpoint-phone) {
+      height: 80%;
+      width: 55%;
+    }
+
+    @media only screen and (max-width: $breakpoint-miniphone) {
+      right: -22rem;
+
+      height: 55%;
+      width: 92%;
+      border-radius: 80% 50% 0 0;
     }
   }
 }
